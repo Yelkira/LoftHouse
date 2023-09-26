@@ -1,5 +1,15 @@
 .video {
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "IV";
+
+    left:calc(50% + 550px);
+    transform: translate(-50%, -0%);
+
+    @include decorNumber;
+  }
   // .video__link
   &__link {
     position: relative;
@@ -28,6 +38,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.2s ease-in;
+
+    @include mediaTablet {
+        width: 80px;
+        height: 80px;
+    }
   }
 
   .video__link:hover &__icon {
