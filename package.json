@@ -1,4 +1,7 @@
 {
   "name": "loft-house",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "cp index.html public/"
+  }
 }
