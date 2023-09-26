@@ -1,7 +1,5 @@
 {
   "name": "loft-house",
   "version": "1.0.0",
-  "scripts": {
-    "build": "echo 'Build step is not required for static websites.'"
-  }
+
 }
